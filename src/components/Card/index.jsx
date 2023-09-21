@@ -1,10 +1,12 @@
 import Image from 'next/image'
-import style from './style.module.css'
+import style from './card.module.css'
+
+
 const Card = produto => {
   return (
     <div className={style.card}>
       <figure>
-        <Image className={style.cardImage} src={produto.imagem} />
+        <Image className={style.cardImage} src={produto.imagem} alt={produto.nome} title={produto.nome}/>
       </figure>
       <div className={style.cardInformacoes}>
         <div>

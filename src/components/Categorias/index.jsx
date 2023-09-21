@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import style from './style.module.css'
+import style from './categorias.module.css'
 import Entrada from '@/assets/icones/entrada.png'
 import Bebida from '@/assets/icones/bebidas.png'
 import Massa from '@/assets/icones/massa.png'

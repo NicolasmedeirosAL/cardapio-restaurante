@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { buscarProduto, filtrarProduto, produtosEntrada } from '@/services'
-import style from './style.module.css'
+import style from './home.module.css'
 
 import Banner from '../../assets/bn.png'
 import Categorias from '@/components/Categorias'
@@ -45,7 +45,10 @@ const Home = () => {
       </header>
       <main>
         <Categorias handleFiltro={handleFiltro} botaoClicado={botaoClicado} />
-        <CampoDeBusca handleBusca={handleBusca} textoBuscaDigitado={textoBuscaDigitado}/>
+        <CampoDeBusca
+          handleBusca={handleBusca}
+          textoBuscaDigitado={textoBuscaDigitado}
+        />
 
         <section className={`${style.cardSecao} limitar-secao`}>
           <div>
