@@ -1,0 +1,44 @@
+.containerBotoes {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 5px;
+  gap: 10px;
+}
+
+.containerBotoes button {
+  padding: 10px 0;
+  width: 150px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.containerBotoes button:hover {
+  background-color: #daa520;
+}
+
+.acenderBtn {
+  background: #daa520;
+}
+
+.iconesBtns {
+  margin: 0 5px;
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .containerBotoes {
+    flex-wrap: wrap;
+  }
+}

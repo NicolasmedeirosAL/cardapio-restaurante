@@ -1,0 +1,47 @@
+
+
+.card {
+width: 250px;
+
+
+flex-grow: 1;
+border: 1px solid #faa520;
+border-radius: 4px;
+display: flex;
+flex-direction: column;
+ 
+}
+.card figure {
+  
+  height: 250px;
+}
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cardInformacoes {
+  padding: 10px;
+  flex: 1 1 150px;
+  display: flex;
+  flex-direction: column;
+}
+.cardInformacoes div:nth-child(1) {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.cardInformacoes small {
+  color: #faa520;
+  font-weight: bold;
+}
+
+.cardInformacoes div:nth-child(2) {
+  text-align: right;
+  font-weight: bold;
+}

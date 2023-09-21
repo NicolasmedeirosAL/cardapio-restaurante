@@ -1,0 +1,24 @@
+.campoDeBusca {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+
+  gap: 5px;
+  border: 2px solid #f3f3f3;
+  border-radius: 20px;
+}
+
+.campoDeBusca input {
+  width: 100%;
+  padding: 0 5px;
+  border: 0;
+  border-radius: 20px;
+  outline-style: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.campoDeBusca input::placeholder {
+  font-size: 16px;
+  font-weight: bold;
+}
