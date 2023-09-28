@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Image from 'next/image'
+import Head from 'next/head'
 import { buscarProduto, filtrarProduto, produtosEntrada } from '@/services'
 import style from './home.module.css'
 
@@ -27,7 +28,11 @@ const Home = () => {
   }
 
   return (
-    <>
+     <>
+     <Head>
+      <title>Restaurant</title>
+     </Head>
+          <body>
       <header className={style.banner}>
         <Image
           className={style.imgBanner}
@@ -68,7 +73,10 @@ const Home = () => {
           </div>
         </section>
       </main>
-    </>
+    </body>
+     </>
+
+    
   )
 }
 export default Home

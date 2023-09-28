@@ -10,7 +10,7 @@ const CampoDeBusca = ({ textoBuscaDigitado, handleBusca }) => {
         type="text"
         value={textoBuscaDigitado}
         onChange={event => handleBusca(event.target.value)}
-        placeholder="Pesquise pelo seu prato favorito aqui"
+        placeholder="Pesquise por um prato"
       />
     </div>
   )
